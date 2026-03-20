@@ -28,6 +28,7 @@ Or use [Etcher](https://etcher.balena.io) with the decompressed `.img` file.
 
 **4. Boot** from USB. GRUB menu appears with:
 - **Troposphere** — normal boot
+- **Safe Graphics** — for NVIDIA/AMD hardware compatibility
 - **Safe Mode** — password protected, no network
 - **Install** — install to internal disk
 
@@ -43,8 +44,6 @@ Or use [Etcher](https://etcher.balena.io) with the decompressed `.img` file.
 - 8GB+ USB drive for live boot
 
 ### Verify Download
-
-Check SHA256 against `SHA256SUMS` in the release.
 
 ```bash
 sha256sum -c SHA256SUMS
@@ -62,14 +61,15 @@ sha256sum -c SHA256SUMS
 - Anomaly detection with emergency rotation
 - GRUB password-protected safe mode
 
-## Source Code
+## Source Code & Tools
 
-- **Kernel:** [DFoS](https://github.com/dialectforge/DFoS) (GPL v2)
-- **Tools:** [dfos-tools](https://github.com/dialectforge/dfos-tools) (Proprietary)
+- **Kernel (GPL v2):** [DFoS](https://github.com/dialectforge/DFoS) — full kernel source, audit and build it yourself
+- **Userspace tools:** The installer, dfctl, dfpkg, and pentest suite are proprietary. Commercial licenses and early access available — contact dialectforge@gmail.com
 - **Website:** [dialectforge.com](https://dialectforge.com)
+- **Prior Art:** [DialectForge-Native Language Models](https://github.com/dialectforge/dialectforge-prompt)
 
 ## License
 
-DialectForge protocol is Patent Pending. Free for personal, research, and educational use. Commercial deployment requires a protocol license.
+DialectForge protocol is Patent Pending (Provisional Application Filed February 25, 2026). Free for personal, research, and educational use. Commercial deployment requires a protocol license.
 
 *Inventor: John Dean Martin — Ewen, Michigan*
